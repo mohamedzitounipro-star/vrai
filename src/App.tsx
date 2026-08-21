@@ -13,6 +13,7 @@ import {
   CarFront
 } from "lucide-react";
 import { useState, useEffect, ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 // --- Static Data ---
 
@@ -624,6 +625,7 @@ export default function App() {
           </div>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
@@ -748,4 +750,3 @@ const ThemeToggle = ({ isDarkMode, toggleTheme }: { isDarkMode: boolean, toggleT
     </div>
   );
 };
-
